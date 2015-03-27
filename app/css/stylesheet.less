@@ -1,0 +1,78 @@
+@listgroup-dark-gray: #485563;
+@body-font-light-gray: #ebebeb;
+
+.todo-header {
+	> h1 {
+		display: inline-block;
+	}
+	> .fa {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		font-size: 3em;
+		margin-left: 0.5em;
+		bottom: -0.06em;
+		&:hover {
+			color: lighten(@body-font-light-gray, 15%);
+		}
+	}
+}
+
+
+// toastr overrides
+#toast-container > div {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-size: 0.8em;
+	box-shadow: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	&:hover {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+// chrome overrides
+.btn {
+	outline: none !important;
+}
+
+// bootstrap overrides
+// add navbar padding
+body {
+	&:before {
+		content: '';
+		display: block;
+		height: 50px;
+	}
+}
+
+* {
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+
+// list group modifier
+.panel {
+	.list-group-item {
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+			color: #ebebeb;
+			background-color: @listgroup-dark-gray;
+		}
+		&:active {
+			background-color: darken(@listgroup-dark-gray, 5%);
+		}
+	}
+}
