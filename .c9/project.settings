@@ -17,7 +17,7 @@
         "@eslintrc": "true",
         "@instanceHighlight": "true",
         "@semi": "true",
-        "@undeclaredVars": "true",
+        "@undeclaredVars": false,
         "@unusedFunctionArgs": "false",
         "@warnLevel": "info"
     },
