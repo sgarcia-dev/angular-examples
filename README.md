@@ -1,2 +1,2 @@
-# todo-app-angular
-To-Do app made in AngularJS
+# angularjs-workspace
+AngularJS playground for code examples
